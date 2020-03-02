@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/send_tweet"
+        android:orderInCategory="100"
+        android:icon="@drawable/send"
+        app:showAsAction="always"
+        android:title="Send Tweet"/>
+
+    <item
         android:id="@+id/logout_user"
         android:orderInCategory="100"
         android:title="Logout"

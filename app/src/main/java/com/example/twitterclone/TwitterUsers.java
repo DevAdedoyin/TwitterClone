@@ -58,6 +58,8 @@ public class TwitterUsers extends AppCompatActivity implements AdapterView.OnIte
                             }
                         }
                     }
+                } else {
+                    e.printStackTrace();
                 }
             }
         });
@@ -71,10 +73,13 @@ public class TwitterUsers extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem menu) {
-        if (menu.getItemId() ==R.id.logout_user){
+        if (menu.getItemId() == R.id.logout_user){
             ParseUser.getCurrentUser().logOut();
             finish();
             Intent intent = new Intent(getApplicationContext(), Login_Activity.class);
+            startActivity(intent);
+        } else if (menu.getItemId() == R.id.send_tweet){
+            Intent intent = new Intent(getApplicationContext(), Send_Tweet.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(menu);

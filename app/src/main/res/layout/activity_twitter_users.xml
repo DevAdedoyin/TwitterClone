@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".TwitterUsers">
 
-
     <ListView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
         app:layout_constraintTop_toTopOf="parent"
