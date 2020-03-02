@@ -51,7 +51,7 @@ public class Signup_Activity extends AppCompatActivity implements View.OnClickLi
             @Override
             public void onClick(View v) {
                 if (edtTxtCpassword.getText().toString() != edtTxtPassword.getText().toString() && edtTxtPassword.getText().toString().length() < 8) {
-                    FancyToast.makeText(getApplicationContext(), "Password and Confirm Password must be equal and must 8 or more characters long", FancyToast.LENGTH_LONG, FancyToast.ERROR, true).show();
+                    FancyToast.makeText(getApplicationContext(), "Password and Confirm Password must be equal and must be 8 or more characters long", FancyToast.LENGTH_LONG, FancyToast.ERROR, true).show();
                 } else {
                     if (edtTxtUsername.getText().equals("") || edtTxtUsername.getText().equals("") || edtTxtPassword.getText().equals("") || edtTxtCpassword.getText().equals("")) {
                         FancyToast.makeText(getApplicationContext(), "Email, Username, Password and Confirm Password are all required", FancyToast.LENGTH_LONG, FancyToast.INFO, true).show();
